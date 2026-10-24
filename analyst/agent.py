@@ -4,7 +4,7 @@ from typing import List, Optional
 
 from dotenv import load_dotenv
 from uagents import Agent, Context, Model
-
+from shared.models import AnalysisRequest, AnalysisResult
 from strategy import analyze_strategy
 from critic import critique_evidence
 from risk import assess_risk

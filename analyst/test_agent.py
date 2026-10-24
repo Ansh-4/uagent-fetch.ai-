@@ -1,6 +1,6 @@
 
 from typing import List, Optional
-
+from shared.models import AnalysisRequest, AnalysisResult
 from uagents import Agent, Context, Model
 
 
@@ -78,7 +78,7 @@ async def receive_result(
     ctx.logger.info(f"Risk level: {msg.risk_level}")
     ctx.logger.info(f"Review status: {msg.review_status}")
     ctx.logger.info(f"Recommendation: {msg.recommendation}")
-    await ctx.stop()
+    
 
 
 if __name__ == "__main__":
