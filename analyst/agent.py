@@ -52,8 +52,7 @@ class AnalysisResult(Model):
 analysis_agent = Agent(
     name="daothink_analysis_agent",
     seed=SEED,
-    port=8002,
-    endpoint=["http://127.0.0.1:8002/submit"],
+    mailbox=True,
 )
 
 
